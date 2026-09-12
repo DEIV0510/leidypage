@@ -1,0 +1,13 @@
+# Producto pagado — NUNCA subir el PDF al sitio público
+*.pdf
+
+# Fuentes de trabajo / procesamiento de recursos
+_src/
+node_modules/
+package.json
+package-lock.json
+
+# Sistema
+.git
+.DS_Store
+Thumbs.db
