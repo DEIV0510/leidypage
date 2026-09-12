@@ -1,0 +1,12 @@
+# Producto pagado — NO publicar el PDF en el repo público
+*.pdf
+
+# Fuentes de trabajo / procesamiento de recursos
+_src/
+node_modules/
+package.json
+package-lock.json
+
+# Sistema
+.DS_Store
+Thumbs.db
