@@ -198,11 +198,15 @@
   .author .firma{margin-top:22px;font-family:var(--serif);font-style:italic;font-size:26px;color:var(--terra)}
   .author .role{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-mute);margin-top:2px}
 
-  /* TESTIMONIOS (placeholder) */
+  /* TESTIMONIOS */
   .testi{background:var(--ivory);text-align:center}
-  .testi .box{margin-top:30px;max-width:640px;margin-left:auto;margin-right:auto;border:1.5px dashed var(--rose-line);border-radius:20px;padding:40px 28px;background:var(--cream)}
+  .testi .box{margin-top:30px;max-width:640px;margin-left:auto;margin-right:auto;border:1px solid var(--rose-line);border-radius:24px;padding:clamp(32px,5vw,48px);background:var(--cream);box-shadow:var(--sh-card)}
   .testi .box p{color:var(--ink-soft)}
-  .testi .box .q{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--plum);margin-bottom:8px}
+  .testi .box .q{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2.3vw,22px);line-height:1.55;color:var(--plum);margin-bottom:8px}
+  .testi .who{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:24px}
+  .testi .av{width:42px;height:42px;border-radius:50%;background:var(--plum-deep);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:15px;font-weight:600;flex-shrink:0}
+  .testi .nm{font-family:var(--sans);font-weight:600;font-size:14px;color:var(--plum-deep);text-align:left}
+  .testi .rl{font-size:12px;color:var(--ink-mute);text-align:left}
 
   /* OFERTA */
   .offer{background:linear-gradient(170deg,#FDF6EE,#F7E9DE)}
@@ -469,7 +473,7 @@
     <div class="wrap grid">
       <div class="ph rv">
         <img src="./assets/leidy-portrait.webp" alt="Leidy Sepúlveda" width="853" height="1280" loading="lazy" />
-        <span class="badge">Leidy acompaña desde la experiencia de haberse reconstruido.</span>
+        <span class="badge">Fundadora del Método Alma e Imagen</span>
       </div>
       <div class="rv d1">
         <span class="eyebrow">Quién te acompaña</span>
@@ -483,14 +487,20 @@
     </div>
   </section>
 
-  <!-- ==================== TESTIMONIOS (placeholder) ==================== -->
-  <!-- TESTIMONIALS: cuando existan testimonios REALES, reemplaza este bloque. No inventar. -->
+  <!-- ==================== TESTIMONIOS ==================== -->
+  <!-- Testimonio REAL de una paciente de Leidy (documento "Mi proceso_Juliana Soto"), compartido por la usuaria. No es sobre esta guía puntual, sino sobre su proceso terapéutico con Leidy — por eso la atribución dice "en proceso terapéutico con Leidy", no "lectora". -->
   <section class="testi pad-sm" id="testimonios">
     <div class="wrap">
-      <div class="kv mx rv"><span class="eyebrow">Voces</span><h2 class="big" style="margin-top:12px">Historias que están por escribirse</h2></div>
+      <div class="kv mx rv"><span class="eyebrow">Voces</span><h2 class="big" style="margin-top:12px">Una historia real de transformación</h2></div>
       <div class="box rv">
-        <p class="q">«Aquí irán las palabras de quienes ya volvieron a sí mismas.»</p>
-        <p>Esta sección está lista para agregar testimonios reales de tus lectoras.</p>
+        <p class="q">«Leidy fue un instrumento de Dios en mi camino. No porque haya hecho el proceso por mí, sino porque me acompañó a encontrar dentro de mí herramientas, respuestas y una fuerza que yo no sabía que tenía. Me ayudó a mirar mis heridas sin vergüenza, a entender mi historia sin quedarme atrapada en ella y a descubrir que mi pasado podía explicar muchas cosas de mí, pero no tenía que determinar quién sería para siempre.»</p>
+        <div class="who">
+          <span class="av">JS</span>
+          <div>
+            <div class="nm">Juliana Soto</div>
+            <div class="rl">En proceso terapéutico con Leidy Sepúlveda</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
