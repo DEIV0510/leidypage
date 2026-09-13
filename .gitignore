@@ -7,6 +7,12 @@ node_modules/
 package.json
 package-lock.json
 
+# Video crudo (footage sin comprimir) — nunca al repo, muy pesado
+*.mov
+*.MOV
+
 # Sistema
 .DS_Store
 Thumbs.db
+
+.vercel

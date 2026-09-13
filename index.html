@@ -319,11 +319,11 @@
         <h2 class="big" style="margin-top:14px">Deja que Leidy te cuente<br>de qué se trata</h2>
       </div>
       <div class="vwrap rv">
-        <div class="vframe" id="videoFrame" data-video-poster="./assets/leidy-desk.webp">
-          <img class="poster" src="./assets/leidy-desk.webp" alt="" aria-hidden="true" width="1280" height="720" loading="lazy" />
+        <div class="vframe" id="videoFrame" data-video-poster="./assets/video-poster.webp">
+          <img class="poster" src="./assets/video-poster.webp" alt="" aria-hidden="true" width="860" height="484" loading="lazy" />
           <button class="play" id="videoPlay" aria-label="Reproducir video de Leidy">
             <span class="disc"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-            <span class="lbl" id="videoLbl">Muy pronto: un mensaje de Leidy</span>
+            <span class="lbl" id="videoLbl">Reproducir el mensaje de Leidy</span>
           </button>
         </div>
       </div>
@@ -473,10 +473,8 @@
       </div>
       <div class="rv d1">
         <span class="eyebrow">Quién te acompaña</span>
-        <h2>Sí se puede. Y lo digo con certeza.</h2>
-        <p>Con mi experiencia ayudando a <span class="hl">cientos de mujeres</span> a salir de ahí, hoy te puedo decir esto con toda certeza: sí se puede.</p>
-        <p>Esta guía la hice con mucho amor, por alguien que sabe lo que es reconstruirse.</p>
-        <div class="firma">Leidy Sepúlveda</div>
+        <!-- BIO DE LEIDY: pendiente su texto real (quitado el bloque genérico anterior). No inventar. -->
+        <div class="firma" style="margin-top:14px">Leidy Sepúlveda</div>
         <div class="role">Alma e Imagen</div>
       </div>
     </div>
@@ -557,14 +555,8 @@ const CONFIG = {
   PRICE:        "$17",
   CURRENCY:     "USD",
 
-  /* PEGA AQUÍ el video cuando esté listo. Acepta YouTube, Vimeo o un .mp4.
-     Ejemplos:
-       "https://www.youtube.com/watch?v=XXXXXXXX"
-       "https://youtu.be/XXXXXXXX"
-       "https://vimeo.com/123456789"
-       "./assets/mi-video.mp4"
-     Déjalo vacío ("") para mostrar el placeholder. */
-  VIDEO_URL:    "",
+  /* Video real de Leidy (autohospedado, comprimido a 720p H.264 para carga rápida). */
+  VIDEO_URL:    "./assets/video-leidy.mp4",
 
   /* Link de compra/checkout. Va al carrito de WooCommerce en almaeimagen.com
      (producto #169, $17, entrega automática del PDF tras el pago con Stripe). */
