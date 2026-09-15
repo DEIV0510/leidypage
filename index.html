@@ -59,8 +59,11 @@
   /* Header */
   header.top{position:sticky;top:0;z-index:60;background:rgba(251,245,238,.82);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid rgba(234,223,210,.7)}
   header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
-  header.top img{width:150px;height:auto}
-  header.top .cta{font-family:var(--sans);font-weight:500;font-size:14px;color:var(--plum-deep);border:1px solid var(--rose-line);border-radius:100px;padding:9px 18px;transition:background .3s,border-color .3s}
+  header.top .brand{display:flex;align-items:center;gap:12px;min-width:0}
+  header.top img{width:150px;height:auto;flex-shrink:0}
+  header.top .back{font-family:var(--sans);font-size:12.5px;font-weight:500;color:var(--ink-mute);white-space:nowrap;transition:color .3s;border-left:1px solid var(--rose-line);padding-left:12px}
+  header.top .back:hover{color:var(--plum-deep)}
+  header.top .cta{font-family:var(--sans);font-weight:500;font-size:14px;color:var(--plum-deep);border:1px solid var(--rose-line);border-radius:100px;padding:9px 18px;transition:background .3s,border-color .3s;flex-shrink:0}
   header.top .cta:hover{background:var(--rose);border-color:var(--plum-soft)}
 
   section{position:relative}
@@ -283,7 +286,10 @@
 <!-- ==================== HEADER ==================== -->
 <header class="top">
   <div class="wrap">
-    <a href="#top" aria-label="Alma e Imagen"><img src="./assets/logo.png" alt="Alma e Imagen · by Leidy Sepúlveda" width="150" height="68" /></a>
+    <div class="brand">
+      <a href="#top" aria-label="Alma e Imagen"><img src="./assets/logo.png" alt="Alma e Imagen · by Leidy Sepúlveda" width="150" height="68" /></a>
+      <a class="back" href="https://almaeimagen.com">← Volver</a>
+    </div>
     <a class="cta" href="#comprar" data-checkout>Quiero mi guía · <span data-price>$17</span></a>
   </div>
 </header>
